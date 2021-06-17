@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Mern Shopping Cart",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/ersinctky/shopping-mern#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
