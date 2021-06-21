@@ -21,7 +21,7 @@ const HomeScreen = () => {
       {loading ? (
         <Loader />
       ) : error ? (
-        <Message variant="danger">{error}</Message>
+        <Message variant="danger">{<h1>{error}</h1>}</Message>
       ) : (
         <Row>
           {products.map((product) => {
