@@ -16,7 +16,11 @@ const UserListScreen = ({ history }) => {
   const { userInfo } = userLogin;
 
   useEffect(() => {
-    dispatch(listUsers());
+    if (userInfo && userInfo.isAdmin) {
+      dispatch(listUsers());
+    } else {
+      history.push("/login");
+    }
   }, [dispatch, history, userInfo]);
 
   const deleteHandler = (id) => {
