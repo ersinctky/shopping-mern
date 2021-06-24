@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
+// PayPal
+app.get("/api/config/paypal", (req, res, next) => {
+  res.send(process.env.PAYPAL_CLIENT_ID);
+});
 
 app.use(notFound);
 app.use(errorHandler);
