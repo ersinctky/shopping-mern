@@ -6,6 +6,7 @@ import ProductCarousel from "../components/ProductCarousel";
 
 import Message from "../components/Message";
 import Paginate from "../components/Paginate";
+import Meta from "../components/Meta";
 
 import Loader from "../components/Loader";
 import Product from "../components/Product";
@@ -27,6 +28,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
+      <Meta />
       {!keyword ? (
         <ProductCarousel />
       ) : (
