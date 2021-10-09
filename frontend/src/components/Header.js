@@ -23,7 +23,10 @@ const Header = () => {
             <Navbar.Brand>ProShop</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse
+            id="basic-navbar-nav"
+            className="d-flex justify-content-between"
+          >
             <SearchBox />
             <Nav className="ml-auto">
               <LinkContainer to="/cart">

@@ -4,7 +4,7 @@
 
 ## Demo
 
-Demo Link Heroku: https://ersinshopmern.herokuapp.com/
+Demo Link Heroku: https://shopping-mern-master-ersin.herokuapp.com/
 
 ## Features
 

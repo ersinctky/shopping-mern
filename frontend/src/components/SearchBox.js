@@ -17,7 +17,11 @@ const SearchBox = () => {
   };
 
   return (
-    <Form onSubmit={submitHandler} inline>
+    <Form
+      className="d-flex justify-content-between"
+      onSubmit={submitHandler}
+      inline
+    >
       <Form.Control
         type="text"
         value={keyword}
@@ -25,7 +29,12 @@ const SearchBox = () => {
         placeholder="Search Products..."
         className="mr-sm-2 ml-sm-5"
       ></Form.Control>
-      <Button type="submit" variant="outline-info" className="p-1">
+      <Button
+        type="submit"
+        variant="outline-info"
+        className="p-2"
+        style={{ marginLeft: 8 }}
+      >
         Search
       </Button>
     </Form>
